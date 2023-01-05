@@ -13,3 +13,20 @@ Task2
 3. find images with numbers in list
 4. append images to html
 
+
+## Spring annotations
+@SpringBootApplication - entry point for spring boot (usually with psvm?)
+@Controller - to indicate class role and create a Bean (spring class instance)
+@RequestMapping - map URL to class or method
+@RequestParam
+
+## CRUD
+@GetMapping
+@PostMapping
+
+
+## Thymeleaf expressions
+data-th-text
+
+## TBC
+Generate
