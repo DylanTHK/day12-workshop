@@ -23,7 +23,7 @@ public class GenRandomNoController {
     
     // @GetMapping detects /form in URL
     @GetMapping(path = "/form")  
-    public String showGenerateForm(Model model) {
+    public String showGenerateForm(Model model) { // where does model enter as argument? ***** $$
         // creating instance of value
         Generate num = new Generate();
         model.addAttribute("generatedObj", num);
@@ -34,7 +34,7 @@ public class GenRandomNoController {
 
     // @PostMapping detects change in URL (from spring)
     @PostMapping(path = "/results") // linked from generate.html 's form
-    public String postResult(@ModelAttribute Generate newNum, Model model) {
+    public String postResult(@ModelAttribute Generate newNum, Model model) { // modelAttribute auto detect existing Generate Value? ***** $$
         System.out.println("number: " + newNum.getNumValue());
         System.out.println("model: " + model);
         System.out.println("Opening result.html");
@@ -64,7 +64,7 @@ public class GenRandomNoController {
 
         // add first n numbers of array in empty array
         for (int i = 0; i < n; i++) {
-            String tempText = "number" + randomList.get(i) + ".jpg";
+            String tempText = "number" + randomList.get(i);
             modelList.add(tempText);
         }
         System.out.println("modelLsit: " + modelList); // can remove

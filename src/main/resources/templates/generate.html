@@ -10,7 +10,10 @@
     <h1>Select a Random Number</h1>
      <!-- are we able to pass any other data types? -->
      <!-- @{/rand/results} -->
-    <form action="#" th:action="@{/rand/results}" th:object="${generatedObj}" method="post">
+    <form action="#" 
+        th:action="@{/rand/results}" 
+        th:object="${generatedObj}" 
+        method="post">
         <div>
             <!-- *{numValue} same as ${generatedObj.numValue} -->
             <input type="text" th:field="*{numValue}">

@@ -11,7 +11,7 @@
     <!-- for each loop to iterate through each item in randList -->
     <ul th:each="img : ${randList}">
         <li th:text="${img}"></li>
-        <img th:src="@{${'/images/' + img}}" th:alt="${img}" width="200">
+        <img th:src="@{${'/images/' + img + '.jpg'}}" th:alt="${img + '.jpg'}" width="200">
     </ul>
 </body>
 </html>
